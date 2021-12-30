@@ -1,0 +1,218 @@
+body {
+	background-color:rgb(200,200,200);
+	margin:0;
+	padding:0;
+}
+
+header {
+	background-color: black;
+	position:relative;
+	height:100px;
+}
+
+header img {
+	margin:10px;
+	height:80px;
+	width: 80px;
+	left: 120px;
+	position:absolute;
+}
+
+header h1 {
+	position:absolute;
+	top:20px;
+	left: 240px;
+	font-size:2em;
+	color:red;
+}
+
+.wrapper {
+	width:80%;
+	height:400px;
+	min-width:760px;
+	margin:0 auto;
+	background-color:rgb(172,188,122);
+}
+
+#hangman {
+	background-color: black;
+	padding:15px;
+}
+
+#hangmanwrapper {
+
+	position: absolute;
+	width: 280px;
+	height: 280px;
+	left:18%;
+	top:140px;
+}
+
+#letters {
+	background-color: rgb(134,150,145);
+	border: black dashed 2px;
+	padding: 3%;
+	width: 350px;
+	height: 200px;
+	top:0px;
+}
+
+#letterwrapper {
+	position: absolute;
+	width: 350px;
+	height: 230px;
+	right:18%;
+	top:150px;
+}
+
+#banktag {
+	font-size: 1em;
+	color: black;
+	text-align: center;
+	position:relative;
+	width: 375px;
+}
+
+#guessnumber {
+	width:80px;
+	position:relative;
+	top:100px;
+	left:40%;
+	font-size: 1.5em;
+}
+
+h1, h2, h3 {
+	font-family: 'Roboto', sans-serif;
+	margin: 5px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2.6em;
+	color: red;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.6em;
+	color: red;
+}
+
+p {
+	font-size: 1.6em;
+	color: #000000;
+}
+
+ul {
+	margin: 11px 0 0 0;
+    padding: 0px 0px 0px 0px;
+    display: inline-block;
+}
+
+#arrayMessage {
+	font-size: 4em;
+	color: red;
+	position:absolute;
+	right:200px;
+	bottom: 10px;
+}
+
+li {
+	float: left;
+	margin: 0 7px 10px 6px;
+	list-style: none;
+	width: 35px;
+	height: 30px;
+	padding-top: 5px;
+	background: #cf8c45;
+	color: #000000;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align:center;
+	cursor: pointer;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border: solid 1px #fff;
+}
+
+.play {
+	background-color:black;
+
+	display: inline-block;
+	padding:10px;
+	border-radius:50px;
+	font-size:1.5em;
+	text-align:center;
+	color:red;
+	text-decoration: none;
+	width:40%;
+	position:relative;
+	top:40px;
+	left:30%;
+}
+
+#mylife {
+	background-color: black;
+	padding:0;
+	border-radius:10px;
+	font-size:1.5em;
+	text-align:center;
+	color:red;
+	text-decoration: none;
+	width:50px;
+	position:relative;
+	top:15px;
+	left:20%;
+	margin: 0;
+	border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+	border-image: initial;
+	font-family: sans-serif;
+}
+
+#notification {
+	font-size:1em;
+	text-align:left;
+	color:red;
+	text-decoration: none;
+	position:absolute;
+	top:115px;
+	left:100%;
+}
+
+#inputSubmit {
+	margin: 0px 0px 0px 38px;
+    background-color: black;
+    padding: 1px 4px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    color: red;
+    text-decoration: none;
+	border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+	border-image: initial;
+}
+
+#inputError {
+	font-size: 13px;
+    margin: 4px 0px;
+    color: red;
+	visibility: hidden;
+	text-align: center;
+}
+
+.input {
+	padding: 0px 15px 10px 15px;
+}
+
+#winFail {
+	visibility: hidden;
+}
+#reset {
+	visibility: hidden;
+}

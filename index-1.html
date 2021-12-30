@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript Hangman game</title>
+		<link rel="stylesheet" href="./css/main1.css">
+		<script src="./scripts/new1.js"></script>
+	</head>
+
+  	<body>
+	 	<header>
+			<img src = "images/hangman.jpg" alt = "logo" width = "100">
+			<h1>Hangman Game is FUN!</h1>
+			<nav id = "header_wrapper">
+				<label id="arrayMessage"> </label>
+			</nav>
+		</header>
+ 
+		<div class="wrapper">
+			<div id = "hangmanwrapper">
+				<canvas id="hangman" width="260" height="260";></canvas>
+				<script> // draw hangman
+					let c = document.getElementById("hangman");
+					let preDraw = c.getContext("2d");
+					preDraw.lineWidth = 5;
+					preDraw.strokeStyle = "red";
+					preDraw.beginPath();
+					preDraw.moveTo(245,245);
+					preDraw.lineTo(15, 245);		
+					preDraw.lineTo(15, 15);
+					preDraw.lineTo(160, 15);
+					preDraw.lineTo(160,40);		
+					preDraw.stroke();
+				</script>
+			</div>
+			<div id = guessnumber>
+				<fieldset class = "input">
+					<legend>Guess A Letter</legend>
+					<input type = "char" name = "guess" id = "guess" autofocus required placeholder = "Input Letter"  size = "20" maxlength="1"></input>
+					<p id="inputError">Must input a letter</p>
+					<button type="button" id="inputSubmit" onclick="getInput()">Guess</button>
+				</fieldset>
+
+				<div>
+					<p id="mylife">n</p>
+					<p id = "notification">Lives remaining!</p>
+				</div>
+			</div>
+
+			<div id = "letterwrapper">
+				<div  id="letters">
+					<ul id="letter"></ul>
+				</div>
+				<p id= "banktag">Available Letter Bank</p>
+			</div>    
+		</div>
+
+		<div class="container">
+			<section>
+				<h2 class="play" id="winFail">You Pass/Fail the Game!</h2>
+			</section>
+			<section>
+				<h2 class="play" id="reset" onclick="resetGame()">Play Again</h2>
+			</section>
+		</div>  
+	</body>
+</html>
